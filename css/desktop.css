@@ -1,0 +1,380 @@
+* {
+    font-family: 'Nunito', Tahoma, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Main Webpage */
+
+.mainpage {
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    background-image: url(/enzo-phase2/images/csbackground.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#ELlogo {
+
+    width: 23rem;
+    height: auto;
+}
+
+.headerline-main header {
+    display: flex;
+    padding: 1% 4%;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+@media screen and (max-width: 768px) {
+    .headerline-main header {
+        flex-direction: column;
+    }
+}
+
+.headerline-main header > a {
+
+    font-size: 50px;
+    align-items: baseline;
+}
+
+.headerline-links {
+    flex: 1;
+    text-align: right;
+}
+
+.headerline-links ul li {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    padding: 8px 25px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerline-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.headerline-links ul li::after {
+    display: block;
+    width: 0%;
+    height: 2px;
+    content: '';
+    background: #4169E1;
+    margin: auto;
+    transition: 0.2s;
+}
+
+.headerline-links ul li:hover::after {
+    width: 100%;
+}
+
+.headerwelcome {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headerwelcome h1 {
+    font-size: 69px;
+}
+
+.headerwelcome p {
+
+    margin: 10px 0px 40px;
+    font-size: 17px;
+    color: white;
+}
+
+.footer {
+    min-width: 100vh;
+    margin: auto;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footerlinks img{
+
+    width: 10rem;
+    height: auto;
+}
+
+.footerlinks ul {
+
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .footerlinks ul {
+        flex-direction: column;
+    }
+}
+
+.footer h2 {
+
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 25px;
+}
+
+.footer ul {
+    margin: 15px 0 20px;
+}
+
+.copyright {
+    
+    font-family: 'Noto Sans', Georgia, Times, 'Times New Roman', serif;
+}
+
+/* About page */
+
+.about {
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18, 49, 56, 0.59), rgba(18, 49, 56, 0.59)), url(/enzo-phase2/images/aboutbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.aboutmetext {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutheader {
+
+    color: white;
+    font-size: 50px;
+}
+
+#enzo {
+    width: 20rem;
+    border-radius: 20px;
+    position: relative; 
+    height: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.enzotext {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.enzotext p {
+    color: white;
+}
+
+.enzotext p, .enzotext img {
+
+    margin: 1rem;
+}
+
+/* Blog page */
+
+.blog {
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18, 49, 56, 0.59), rgba(18, 49, 56, 0.59)), url(/enzo-phase2/images/blogbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.blogpage {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+.blogpage h3 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.blogentry {
+    border: 3px solid rgb(40,24,186);
+    padding: 20px;
+}
+
+.blogpage * {
+    color: white;
+}
+
+.blogside {
+
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loginbutton, .addpostbutton {
+
+    border: 2px solid rgb(40,24,186);
+    margin: 15px;
+    padding: 5px 7px;
+    transition: 0.3s ease-in-out;
+}
+
+.loginbutton a, .addpostbutton a {
+
+    text-decoration: none;
+}
+
+.loginbutton:hover {
+
+    background-color: rgb(53, 138, 218);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.addpostbutton:hover {
+
+    background-color: rgb(53, 138, 218);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* CV page */
+
+.cv {
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18, 49, 56, 0.59), rgba(18, 49, 56, 0.59)), url(/enzo-phase2/images/cvbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/* Contact page */
+
+.contact {
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18, 49, 56, 0.59), rgba(18, 49, 56, 0.59)), url(/enzo-phase2/images/contactmebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.contactcheck {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.contactcheck h1 {
+    font-size: 69px;
+}
+
+.arrowlarge {
+    font-size: 69px;
+    transform: translate(0, 25%);
+}
+
+/* Login page */
+
+.login {
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    background-image: url(/enzo-phase2/images/contactmebg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.login form {
+    border: 1px solid blue;
+    padding: 20px 15px;
+    text-align: center;
+    background-color: rgba(18, 49, 56, 0.59);
+}
+
+.login form fieldset, .login form label, .login form legend {
+    color: white;
+    margin: 10px;
+}
+
+.loginform {
+    margin: 2% 30% 0;
+    
+}
+
+/* Add post */
+
+.addpost {
+    min-height: 100vh;
+    min-width: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(18, 49, 56, 0.59), rgba(18, 49, 56, 0.59)), url(/enzo-phase2/images/cvbg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.addpost form {
+    border: 1px solid blue;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(18, 49, 56, 0.59);
+}
+
+.addpost form fieldset, .addpost form label, .addpost form legend {
+    color: white;
+    margin: 10px;
+}
+
+.addpost #content {
+    width: 30%;
+    height: 15%;
+}
+
+.addpostform {
+    margin: 2% 30% 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/* View Blog */
+
+.viewblog-blogside * {
+
+    font-size: 40px;
+}
+
+.viewblog-blogside .buttons * {
+    font-size: 25px;
+}
